@@ -1,0 +1,187 @@
+/* Header */
+.header {
+  width: 100%;
+  height: 12vh;
+}
+
+/* Hero Section */
+.carousel-item {
+  position: relative;
+  height: 75vh;
+  /* Default for desktop */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(70%);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+}
+
+.carousel-caption h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+
+  /* Tablet */
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  /* Mobile */
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .carousel-caption {
+    width: 70%;
+  }
+
+  .image-logo {
+    width: 230px;
+    height: 8vh;
+    object-fit: cover;
+  }
+}
+
+.app-btn img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.app-btn img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1114px)and (min-width:768px) {
+
+  /* Tablet */
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption {
+    width: 70%;
+  }
+
+  .image-logo {
+    width: 300px;
+    height: 8vh;
+    object-fit: cover;
+  }
+  .offcanvas-cart{
+    width: 75%;
+  }
+
+}
+
+@media (max-width: 1800px)and (min-width:1115px) {
+  .image-logo {
+    width: 230px;
+    height: 9vh;
+    object-fit: cover;
+  }
+  .offcanvas-cart{
+    width: 30%;
+  }
+
+}
+ footer a:hover {
+    color: #28a745;
+    text-decoration: underline;
+  }
+.active-cart{
+  width: 18px;
+  height: 18px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  right: -15%;
+}
+
+/* Product card tweaks */
+.card img.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Make the offcanvas cart content look cleaner (PressMart-like) */
+.offcanvas-cart .offcanvas-body {
+  padding: 0.75rem 1rem;
+}
+
+.cart-items .cart-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-items .cart-item img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#cart-sumary .btn {
+  border-radius: 6px;
+}
